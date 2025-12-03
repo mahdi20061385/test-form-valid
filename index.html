@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Dom</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="form">
+      <h1>فرم ثبت نام</h1>
+      <form autocomplete="off">
+        <input type="text" id="name" placeholder="نام" />
+        <input type="email" id="email" placeholder="ایمیل" />
+
+        <div class="password">
+          <input type="password" id="password" placeholder="پسورد" />
+          <div id="eyeIcon">
+            <i class="fa-solid fa-eye"></i>
+            <i class="fa-solid fa-eye-slash hidden"></i>
+          </div>
+        </div>
+
+        <input type="password" id="confirmPassword" placeholder="تکرار پسورد" />
+
+        <button type="button">ثبت نام</button>
+      </form>
+    </div>
+    <div class="success" id="successMessage"></div>
+    <script src="./app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,90 @@
+@font-face {
+  font-family: "behdad";
+  src:
+    local("behdad"),
+    url("Behdad-Regular.otf") format("opentype"),
+    url("Behdad-Regular.woff") format("woff")
+}
+@font-face {
+  font-family: "Poppins";
+  src:
+    local("Poppins"),
+    url("Poppins-Regular.ttf") format("truetype")
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} 
+body{
+  font-family: "behdad","Poppins";
+  background-image: linear-gradient(to left bottom, #bab2fe 35%, #79e3f8 100%);
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+input,
+button{
+  font-family: "behdad","Poppins";
+  font-size: 16px;
+}
+.form{
+  width: 300px;
+  margin: 100px auto 20px;
+  padding: 25px 15px;
+  border-radius: 10px;
+  box-shadow: rgba(0,0,0,0.24) 0 3px 8px;
+  background-color: rgb(255,255,255,0.13);
+  backdrop-filter: blur(10px);
+}
+
+h1{
+  text-align: center;
+  margin-bottom: 10px;
+}
+form input,
+form button{
+  outline: none;
+  border: 1px solid gray;
+  width: 100%;
+  margin: 5px 0;
+  direction: rtl;
+  padding: 5px;
+  border-radius: 5px;
+}
+.password{
+  position: relative;
+}
+.password i{
+  position: absolute;
+  left: 7px;
+  top: 15px;
+  cursor: pointer;
+}
+.error{
+  color: red;
+  text-align: right;
+  direction: rtl;
+  font-size: 13px;
+  margin-top: 3px;
+}
+.success{
+  color: green;
+  text-align: center;
+  margin-top: 15px;
+  width: 300px;
+  margin: auto;
+  padding: 5px;
+  border: 2px dotted gray;
+  border-radius: 10px;
+  font-weight: bold;
+  visibility: hidden;
+}
+.hidden{
+  display: none !important;
+}
+.successBorder{
+  border: 3px solid rgb(63, 255, 63);
+}
+.errorBorder{
+  border: 3px solid rgb(250, 70, 70);
+}
